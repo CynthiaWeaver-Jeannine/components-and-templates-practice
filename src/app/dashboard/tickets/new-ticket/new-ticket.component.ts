@@ -18,6 +18,7 @@ import { ButtonComponent } from '../../../shared/button/button.component';
 })
 export class NewTicketComponent implements AfterViewInit {
   @ViewChild('form') form?: ElementRef<HTMLFormElement>;
+  
   add = output<{ title: string; ticketText: string }>();
 
   ngAfterViewInit(): void {
